@@ -1,0 +1,24 @@
+<%= render 'header2'%>
+
+<%= image_tag @blog.url, :width => "800" ,  :class =>"left", :style => "border:5px solid white" %>
+
+<p>
+ <h2><%= @blog.title %></h2>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @blog.description %>
+</p>
+<%= render 'socialbuttons' %> 
+<br>
+<br>
+<%= link_to 'Edit Details', edit_blog_path(@blog) %> |
+<%= link_to ' Go Back', blogs_path %>
+</br>
+</div>
+</div>
+</div><br class="clear" />
+<div id="copyright">
+&copy; CaptureArt.com 
+</div>

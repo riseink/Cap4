@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>
+			Capture Art
+		</title>
+		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="style2.css" />
+	</head>
+	<body>
+		<div id="bg1"></div>
+		<div id="bg2"></div>
+		<div id="outer">
+			<div id="header">
+				<div id="logo">
+					<h1>
+						<a href="#"><img src="Capture_Art2.png" alt="capture chicago"/></a>
+					</h1>
+				</div>
+				<div id="search">
+					<form action="" method="post">
+						<div>
+							<input class="text" name="search" size="32" maxlength="64" />
+						</div>
+					</form>
+				</div>
+				<div id="nav">
+					<ul>
+						<li class="first">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Purchase Prints</a>
+						</li>
+						<li>
+							<a href="#">Graphic Design Services</a>
+						</li>
+						<li>
+							<a href="#">Mobile App</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Portfolio</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li class="last">
+							<a href="#">Contact</a>
+						</li>
+					</ul><br class="clear" />
+				</div>
+			</div>
+			<div id="banner">
+				<div class="captions">
+					<h2>capturing... one shot at a time</h2>
+				</div>
+				<img src="images/banner.jpg" alt="" />
+			</div>
+		
+				</div>
+				<div id="content">
+					<div class="box">
+						<h2>
+							<strong>Capture of the Week </strong> - 
+							<% @blogs.each do |blog| %>
+							<%= blog.title %>
+							
+						</h2>
+						<img src="app/assests/images/hankcock-300-tall.jpg" width="171" height="275" alt="" class="left" />
+						<p>
+							<%= blog.description.first%>
+							
+						<p></p>
+						<p></p>
+						<a href="http://www.freecsstemplates.org/">Link to Full Sized Image</a>
+						<p></p>
+						</p>
+						
+					</div>
+					<div class="box">
+						<h3>
+							<strong>Capture of Last Week </strong> - Sears Tower, Chicago
+						</h3>
+						<img src="images/sears171.jpg" width="171" height="191" alt="" class="left" />
+						<p>
+							Here we have <strong>The Sears Tower</strong>, Here I wanted to experiment with various levels of light exposure.  As is
+							my particular style, I opted for the the "overkill" light exposure.  So the Street lamps look like mini supernovas popping 
+							out in front of the building in the background.  A little PhotoShop Layer FX and boom!
+							<p></p>
+							<p></p>
+							<a href="http://www.freecsstemplates.org/">Link to Full Sized Image</a>
+							<p></p>
+						</p>
+						<!-- <ul class="linkedList">
+													<li class="first">
+														<a href="#">Turpis et posuere urna dolor justo</a>
+													</li>
+													<li>
+														<a href="#">Fringilla sem nisl purus lobortis magnis magna pellentesque</a>
+													</li>
+													<li>
+														<a href="#">Venenatis magna ultricies sollicitudin sodales commodo nibh aenean</a>
+													</li>
+													<li>
+														<a href="#">Magnis luctus penatibus non natoque nascetur tempus erat</a>
+													</li>
+													<li class="last">
+														<a href="#">Penatibus dolor pharetra viverra ac erat proin</a>
+													</li>
+												</ul> -->
+					</div><br class="clear" />
+				</div><br class="clear" />
+			</div>
+		</div>
+		<div id="copyright">
+			&copy; CaptureArt.com <!-- Design and Photos by <a href="http://www.freecsstemplates.org/">Seth Epstein</a>. Photos by <a href="http://fotogrph.com/"></a>. -->
+		</div>
+	</body>
+</html>

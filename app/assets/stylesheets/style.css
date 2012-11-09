@@ -156,6 +156,10 @@ ul {
 	color: #777777;
 }
 
+#form {
+	margin: 0 0 0 830px;
+}
+
 #header {
 	position: relative;
 	padding: 28px;

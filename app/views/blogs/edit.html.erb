@@ -1,6 +1,10 @@
-<h1>Editing blog</h1>
+<%= render 'header2'%>
 
+<%= image_tag @blog.url, :width => "800" ,  :class =>"left", :style => "border:5px solid white" %>
+
+<h1>Edit Capture post</h1>
+<div id="form">
 <%= render 'form' %>
 
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>
+<%= link_to 'Go Back', blogs_path %>
+</div>
